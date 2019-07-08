@@ -1,0 +1,21 @@
+{% extends "layout_agenda2.html" %}
+{% block box_c %}
+    <table>
+    <tr>
+       <th>Nome</th>
+       <th>Telefone</th>
+       <th></th>
+    </tr>
+    {% for nome in lista_nomes %} 
+    <tr> 
+            <td> {{ nome }}  </td>
+            <td>{{ dic_agenda[nome] }}</td>
+            <td><a href='/apaga/{{ nome }}'>del</a> </td> 
+    </tr>
+
+    {% endfor %}
+
+    </table>
+
+{% endblock %}
+

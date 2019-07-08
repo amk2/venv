@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+	<meta charset="utf-8">
+	<title> Curso Python </title>
+	<link rel="stylesheet" media="screen" href="/static/style.css">
+	
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="box a">
+          <h1> {{ titulo }} </h1>
+  </div>
+  <div class="box b">
+  </div>
+  <div class="box c">
+	  <h2> Agenda </h2>
+	  <hr>
+      {% block box_c %}
+
+      {% endblock %}
+
+  </div>
+  <div class="box d">
+	  <h2>Menu </h2> 
+	  <hr>
+	  <ul> <a href="/"> Listar <a> </a></ul>
+	  <ul> <a href="/incluir"> Incluir</a> </ul>
+	  <ul> <a href="/apagar"> Apagar</ul>
+  </div>
+</div>
+
+
+</body>
+</html>

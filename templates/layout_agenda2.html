@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+	<meta charset="utf-8">
+	<title> Curso Python </title>
+	<link rel="stylesheet" media="screen" href="/static/style2.css">
+	<link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Open+Sans">
+</head>
+<body>
+<div class="wrapper">
+  <div class="box header"> {{ titulo }} </div>
+  <div class="box sidebar">
+	  <h2>Menu </h2> 
+	  <hr>
+	  <ul> <a href="/"> Listar <a> </a></ul>
+	  <ul> <a href="/incluir"> Incluir</a> </ul>
+      <ul> <a href="/#"> Alterar</a></ul>
+  </div>
+  <div class="box content">
+      <h2> Agenda </h2>
+	  <hr>
+      {% block box_c %}
+
+      {% endblock %}
+
+  </div>
+</div>
+</body>
+</html>

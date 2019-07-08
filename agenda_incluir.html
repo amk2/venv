@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+	<meta charset="utf-8">
+	<title> Curso Python </title>
+	<link rel="stylesheet" media="screen" href="/static/style.css">
+	
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="box a">
+          <h1> {titulo} </h1>
+  </div>
+  <div class="box b">
+  </div>
+  <div class="box c">
+	  <h2> Novo Contato </h2>
+	  <hr>
+          <form action="/gravar">
+              <p> Nome: <input type="text" name="nome"></p>
+              <p> Telefone: <input type="text" name="telefone"></p>
+              <input type="submit" value="Gravar">
+          </form>
+	  <small> {msg} <small> 
+  </div>
+  <div class="box d">
+	  <h2>Menu </h2> 
+	  <hr>
+	  <ul> <a href="/"> Listar <a> </a></ul>
+	  <ul> <a href="/incluir"> Incluir</a> </ul>
+	  <ul> <a href="/apagar"> Apagar</ul>
+  </div>
+</div>
+
+
+</body>
+</html>

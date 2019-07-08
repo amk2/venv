@@ -1,0 +1,12 @@
+{% extends "layout_agenda2.html" %}
+
+{% block box_c %}
+     <h3> Novo Contato </h3>
+     <form action="/gravar" method="post">
+              <p> Nome: <input type="text" name="nome"></p>
+              <p> Telefone: <input type="text" name="telefone"></p>
+              <input type="submit" value="Gravar">
+     </form>
+     <small> {{msg}} </small> 
+
+{% endblock %}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+	<meta charset="utf-8">
+	<title> Curso Python </title>
+	<link rel="stylesheet" media="screen" href="/static/style.css">
+	
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="box a">
+          <h1> {titulo} </h1>
+  </div>
+  <div class="box b">
+       <img width="300px" src="/static/break.jpg" />
+  </div>
+  <div class="box c">
+          <p> Soma : {num1} + {num2} </p>
+          <p> Resultado : {total} </p>
+  </div>
+  <div class="box d">
+
+  </div>
+</div>
+
+
+</body>
+</html>
